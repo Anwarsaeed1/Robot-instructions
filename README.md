@@ -12,13 +12,17 @@ if Put Dynamic Value Like
 
 <h1>InPut</h1>
 </br>
-http://127.0.0.1:8000/api/final_postion   Method (POST)
+http://127.0.0.1:8000/api/final_postion 
+
+</br>
+Method (POST)
+</br>
 {
     "rebot_moves":"FFRFL"
 }
 
-Ouput
-
+<h1> Ouput </h1>
+</br>
 {
     "code": 200,
     "message": "success",
