@@ -9,7 +9,9 @@ L => forward x - 1
 
 Example:
 if Put Dynamic Value Like 
-InPut
+
+<h1>InPut</h1>
+</br>
 http://127.0.0.1:8000/api/final_postion   Method (POST)
 {
     "rebot_moves":"FFRFL"
