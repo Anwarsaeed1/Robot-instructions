@@ -8,16 +8,21 @@ R => forward x + 1
 L => forward x - 1 
 
 Example:
-FFRFL 
-F => y + 1 => x=0 y=1 
-F => y + 1 => x=0 y=2
-R => x + 1 => x=1 y=2
-F => y + 1 => x=1 y=3
-L => x - 1 => x=0 y=3
-Final position is x=0 y=3
+if Put Dynamic Value Like 
+InPut
+http://127.0.0.1:8000/api/final_postion   Method (POST)
+{
+    "rebot_moves":"FFRFL"
+}
 
-File output
-FFRFL => x=0 y=3
+Ouput
+
+{
+    "code": 200,
+    "message": "success",
+    "result": "FFRFL => X=0 , Y=3"
+}
+
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
