@@ -1,3 +1,24 @@
+Create an application that parses Robot instructions and generates a file with final position for each instruction set.
+
+Robot initial position is x=0, y=0
+each instruction character makes the robot move one step in certain direction:
+F => forward y + 1 
+B => forward y - 1 
+R => forward x + 1 
+L => forward x - 1 
+
+Example:
+FFRFL 
+F => y + 1 => x=0 y=1 
+F => y + 1 => x=0 y=2
+R => x + 1 => x=1 y=2
+F => y + 1 => x=1 y=3
+L => x - 1 => x=0 y=3
+Final position is x=0 y=3
+
+File output
+FFRFL => x=0 y=3
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
