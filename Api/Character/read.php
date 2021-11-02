@@ -9,7 +9,7 @@
     header('Access-Control-Allow-Headers: Access-Control-Allow-Headers,Content-Type,Access-Control-Allow-Methods, Authorization, X-Requested-With');
 
     include_once '../../Classes/RobotClass.php';
-    require_once "../../models/Robot.php";
+    require_once "../../Models/Robot.php";
     require_once "../../Helper/Helper.php";
     require_once "../../Classes/MovmentClass.php";
 
