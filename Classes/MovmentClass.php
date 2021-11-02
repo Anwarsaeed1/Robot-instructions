@@ -8,7 +8,7 @@ class MovmentClass
      *
      * @return void
      */
-    public function move(AbstractCharacter $charcter,$move){
+    public function move(AbstractCharacter $character,$move){
 
         $l=Helper::convertStringToArray($move);
 
@@ -17,27 +17,27 @@ class MovmentClass
         for ($i = 0; $i < $l; $i++) {
             switch ($move[$i]) {
                 case 'F':
-                    $this->robotMoveFront($charcter);
+                    $this->characterMoveFront($character);
                     break;
                 case 'B':
-                    $this->robotMoveBack($charcter);
+                    $this->characterMoveBack($character);
                     break;
                 case 'L':
-                    $this->robotMoveLeft($charcter);
+                    $this->characterMoveLeft($character);
                     break;
                 case  'R':
-                    $this->robotMoveRight($charcter);
+                    $this->characterMoveRight($character);
                     break;
             }
         }
     }
 
     /**
-     * Count The Move Back to Robot
+     * Count The Move Back to character
      *
      * @return integer
      */
-    private function robotMoveBack($charcter)
+    private function characterMoveBack($charcter)
     {
       $newPostion=$charcter->getPosition();
       $newPostion[1]=$newPostion[1]-1;
@@ -46,11 +46,11 @@ class MovmentClass
     }
 
      /**
-     * Count The Move Front to Robot
+     * Count The Move Front to character
      *
      * @return integer
      */
-    private function robotMoveFront($charcter)
+    private function characterMoveFront($charcter)
     {
         $newPostion=$charcter->getPosition();
         $newPostion[1]=$newPostion[1]+1;
@@ -58,11 +58,11 @@ class MovmentClass
     }
 
     /**
-     * Count The Move Right to Robot
+     * Count The Move Right to character
      *
      * @return integer
      */
-    private function robotMoveRight($charcter)
+    private function characterMoveRight($charcter)
     {
 
         $newPostion=$charcter->getPosition();
@@ -71,11 +71,11 @@ class MovmentClass
     }
 
     /**
-     * Count The Move Left to Robot
+     * Count The Move Left to character
      *
      * @return Integer
      */
-    private function robotMoveLeft($charcter)
+    private function characterMoveLeft($charcter)
     {
         $newPostion=$charcter->getPosition();
         $newPostion[0]=$newPostion[0]-1;
