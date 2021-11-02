@@ -37,11 +37,11 @@ class MovmentClass
      *
      * @return integer
      */
-    private function characterMoveBack($charcter)
+    private function characterMoveBack($character)
     {
-      $newPostion=$charcter->getPosition();
+      $newPostion=$character->getPosition();
       $newPostion[1]=$newPostion[1]-1;
-      $charcter->setPosition($newPostion);
+      $character->setPosition($newPostion);
       
     }
 
@@ -50,11 +50,11 @@ class MovmentClass
      *
      * @return integer
      */
-    private function characterMoveFront($charcter)
+    private function characterMoveFront($character)
     {
-        $newPostion=$charcter->getPosition();
+        $newPostion=$character->getPosition();
         $newPostion[1]=$newPostion[1]+1;
-        $charcter->setPosition($newPostion);
+        $character->setPosition($newPostion);
     }
 
     /**
@@ -62,12 +62,12 @@ class MovmentClass
      *
      * @return integer
      */
-    private function characterMoveRight($charcter)
+    private function characterMoveRight($character)
     {
 
-        $newPostion=$charcter->getPosition();
+        $newPostion=$character->getPosition();
         $newPostion[0]=$newPostion[0]+1;
-        $charcter->setPosition($newPostion);
+        $character->setPosition($newPostion);
     }
 
     /**
@@ -75,11 +75,11 @@ class MovmentClass
      *
      * @return Integer
      */
-    private function characterMoveLeft($charcter)
+    private function characterMoveLeft($character)
     {
-        $newPostion=$charcter->getPosition();
+        $newPostion=$character->getPosition();
         $newPostion[0]=$newPostion[0]-1;
-        $charcter->setPosition($newPostion);
+        $character->setPosition($newPostion);
     }
 
     
