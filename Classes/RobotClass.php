@@ -4,8 +4,6 @@ include_once '../../Helper/Helper.php';
 
 class RobotClass extends AbstractCharacter
 {
-    private $postion;
-
     /**
      * Construct Function
      *
@@ -28,7 +26,7 @@ class RobotClass extends AbstractCharacter
 
     /**
      *
-     * Seeter Function To Set Position
+     * Setter Function To Set Position
      *  
      * @return string
      */
